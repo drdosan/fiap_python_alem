@@ -2,9 +2,9 @@ import oracledb
 
 def conectar_oracle():
     connection = oracledb.connect(
-        user="system",
-        password="123456",
-        dsn="localhost:1521/XEPDB1",
+        user="user_db",
+        password="password_db",
+        dsn="server_db:port_db/service_name_db",
         mode=oracledb.DEFAULT_AUTH
     )
     return connection

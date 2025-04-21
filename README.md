@@ -103,7 +103,17 @@ CREATE TABLE soja_colheita (
 - Python 3.8+
 - oracledb (`pip install oracledb`)
 - Oracle XE (instância local)
-- Para funcionamento da aplicação, adicionar os parametros de conexão do banco de dados a ser utilizado no arquivo `db_oracle.py`
+- Para funcionamento da aplicação, adicionar os parametros de conexão do banco de dados a ser utilizado no arquivo `db_oracle.py`, exemplo abaixo:
+```python
+def conectar_oracle():
+    connection = oracledb.connect(
+        user="user_db",
+        password="password_db",
+        dsn="server_db:port_db/service_name_db",
+        mode=oracledb.DEFAULT_AUTH
+    )
+    return connection
+```
 
 ---
 
