@@ -72,6 +72,13 @@ No menu de robôs você pode:
 
 ---
 
+## 🧪 Manipulação de Arquivos
+
+O menu Exportar coletas, irá exportar todas as coletas para arquivos .json e .txt que serão salvos na pasta "data" no diretório principal da aplicação.
+
+
+---
+
 ## 🗃️ Banco de Dados Oracle
 
 ### Tabelas utilizadas
